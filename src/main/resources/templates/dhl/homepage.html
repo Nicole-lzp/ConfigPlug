@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+layout:decorate="dhl/homepage/layout">
+<head th:replace="dhl/homepage/base :: common_head(~{::title},~{::script},~{::link})">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" th:src="@{/BootStrap/js/bootstrap.min.js}"></script>
+<link rel="stylesheet" th:href="@{/css/common/page.css}">
+</head>
+<body>
+<div layout:fragment="content">
+	主页
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>验证码</title>
+<link rel="stylesheet" th:href="@{/BootStrap/css/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{css/common/login.css}">
+<script type="text/javascript" th:src="@{JQuery/jquery-3.5.1.js}"></script>
+</head>
+<body>
+	<div>
+		<form class="form-horizontal" id="loginForm" method="post" action="/toHome">
+
+			<div class="col-sm-2">
+				<!-- 验证码 -->
+				<img class="img-rounded" th:src="@{/code/image}" id="randCode"
+					style="height: 32px; width: 70px;" />
+			</div>
+
+			<div class="col-sm-2">
+				<button type="button" class="btn btn-link" onclick="reloadImage()">看不清</button>
+			</div>
+		</form>
+	</div>
+	<br/>
+	<div>
+		<form class="form-horizontal" id="loginForm" method="post" action="/toHome">
+
+			<div class="col-sm-2">
+				<!-- 验证码 -->
+				<img class="img-rounded" th:src="@{/codeImage}" id="randCode"
+					style="height: 32px; width: 70px;" />
+			</div>
+
+			<div class="col-sm-2">
+				<button type="button" class="btn btn-link" onclick="reloadImage()">看不清</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+<script type="text/javascript">
+	function reloadImage() {
+		const src = "/code/image?" + new Date().getTime();
+		$('#randCode').attr('src', src);
+		//$('#code').val('');
+	}
+</script>
+</html>

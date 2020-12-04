@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="common_head(title,scripts,links)">
+<meta charset="UTF-8">
+<title th:replace="${title}">Insert title here</title>
+<link rel="stylesheet" th:href="@{/BootStrap/css/bootstrap.min.css}">
+<script type="text/javascript" th:src="@{/JQuery/jquery-3.5.1.js}"></script>
+<th:block th:replace="${scripts}" />
+<th:block th:replace="${links}" />
+</head>
+<body>
+
+</body>
+</html>

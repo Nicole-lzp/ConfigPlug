@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>导航栏</title>
+<link rel="stylesheet" th:href="@{/BootStrap/css/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{css/common/login.css}">
+<script type="text/javascript" th:src="@{JQuery/jquery-3.5.1.js}"></script>
+</head>
+<body>
+	<!-- th:insert 和 th:replace 区别，insert 只是加载，replace 是替换 -->
+	<div th:insert="dhl/layout/copyright :: copyright"></div>
+	<div th:replace="dhl/layout/copyright :: copyright"></div>
+	<!-- 语法 <div th:insert="layout/fileName :: htmlhead"></div>
+	layout 是文件夹地址，fileName 是文件名，语法这样写 layout/fileName:htmlhead，
+	其中，htmlhead 是指定义的代码片段，如 th:fragment="htmlhead"。 -->
+</body>
+</html>
