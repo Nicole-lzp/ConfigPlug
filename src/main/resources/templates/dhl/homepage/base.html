@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="common_head(title,scripts,links)">
+<!-- head处理页面 -->
 <meta charset="UTF-8">
 <title th:replace="${title}">Insert title here</title>
 <link rel="stylesheet" th:href="@{/BootStrap/css/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{/css/common/left.css}">
+<link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
 <script type="text/javascript" th:src="@{/JQuery/jquery-3.5.1.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.slimscroll.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/common/left.js}"></script>
 <th:block th:replace="${scripts}" />
 <th:block th:replace="${links}" />
 </head>

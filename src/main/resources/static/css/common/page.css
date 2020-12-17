@@ -16,13 +16,13 @@
 
 .left {
 	float: left;
-	width: 15%;
+	width: 16.2%;
 	height: 500px;
 	margin-left: 5px;
 	margin-righr: 5px;
 	background-color: yellow;
-	padding-top: 5px;
 	border:1px black solid;
+	/* padding-top: 5px; */
 }
 
 .footer {
@@ -36,7 +36,7 @@
 
 .content {
 	float: left;
-	width: 84%;
+	width: 82.8%;
 	height: 500px;
 	background-color: Gainsboro;
 	border:1px black solid;

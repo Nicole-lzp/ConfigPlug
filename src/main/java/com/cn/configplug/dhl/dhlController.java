@@ -32,4 +32,13 @@ public class dhlController {
 	public String project() {
 		return "dhl/homepage";
 	}
+	
+	@RequestMapping("/yhgl")
+	public String yhgl() {
+		
+		
+		return "dhl/homepage/yhgl";
+	}
+	
+	
 }
